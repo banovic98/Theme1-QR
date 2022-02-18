@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;0,700;0,800;0,900;1,400;1,500&family=Rochester&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/theme.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <section class="hero">
+          <div class="container">   
+              <div class="row">
+                  <div class="content">
+                    <h1>Dobrodosli u restoran<br/> “Kod Brke”</h1>
+                    <div class="btns">
+                        <a href="" class="custom_btn">Pogledaj cenovnik</a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="menu">
+          <div class="container">
+              <div class="title">
+                  <h2>Menu</h2>
+              </div>
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="info">
+                                <h3>BAKED GNOCCHI TART</h3>
+                                <p>Pimientos, chorizo, apple cider cubes with cabbage and vinegar</p>
+                          <p class="price">2.200RSD</p>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+              </div>
+          </div>
+      </section>
+
+      <section class="happy">
+          <div class="container">
+             <div class="row">
+                 <div class="col-lg-6">
+                    <p>Special offer</p>
+                    <h3>Burgher Menu <span>$18</span> only</h3>
+                    <p class="description">Hamburgher, Chips, Mix Sausages, Beer, Muffin</p>
+                 </div>
+                 <div class="col-lg-6">
+                     <img src="assets/img/happy.svg" alt="" class="img-fluid">
+                 </div>
+             </div>
+          </div>
+      </section>
+
+      <section class="recommended">
+          <div class="container">
+              <div class="row">
+                  <div class="title">
+                    <h2>Recommended</h2>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-lg-6">
+                    <a href="images/image-1.jpg" data-lightbox="image-1" data-title="My caption">
+                      <div class="food"></div>
+                      <img src="" alt="">
+                      </div>
+                      <div class="info">
+                          <h3>BAKED GNOCCHI TART</h3>
+                          <p>Pimientos, chorizo, apple cider cubes with cabbage and vinegar</p>
+                    <p class="price">2.200RSD</p>
+                        </div>
+                      </a>
+                  </div>
+                  
+              </div>
+          </div>
+      </section>
+
+      <section class="map">
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11236.476801813284!2d19.7986517!3d45.2453823!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ee5cd8d4e3762cf!2z0KDQtdGB0YLQvtGA0LDQvSDQmtC-0LQg0JHRgNC60LU!5e0!3m2!1sen!2srs!4v1645221356193!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+      </section>
+
+      <footer>
+
+        <div class="container">
+            <div class="row">
+                <p>Sva prava zadržana. Powered by: QRMenu.rs & WebEnergy</p>
+            </div>
+        </div>
+
+          <script src="assets/js/bootstrap.bundle.js"></script>
+          <script src="assets/js/jquery.js"></script>
+          <script src="assets/js/lightbox.min.js"></script>
+      </footer>
+</body>
+
+</html>
