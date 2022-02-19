@@ -6,6 +6,30 @@ body {
     font-family: $primary_font;
 }
 
+nav {
+    .navbar-collapse {
+        justify-content: end;
+    }
+    a.nav-link {
+        font-weight: 600 !important;
+    }
+    ul.dropdown-menu.show {
+        border: none;
+        background: $primary;
+        border-radius: 0px;
+        a {
+            color: $white;
+            font-weight: 600 !important;
+        }
+        .dropdown-item {
+            &:hover {
+                background-color: $white;
+                color: $primary;
+            }
+        }
+    }
+}
+
 .hero {
     padding: 200px 0 150px;
     background: url('../img/hero.png') center center no-repeat;
@@ -53,6 +77,27 @@ body {
 
 .menu {
     margin: 50px 0;
+    position: relative;
+    &:before {
+        position: absolute;
+        content: "";
+        width: 524px;
+        height: 167px;
+        background-size: cover;
+        background: url("../img/cake.png") center center no-repeat;
+        top: -50px;
+        right: 0px;
+    }
+    &:after {
+        position: absolute;
+        content: "";
+        width: 343px;
+        height: 246px;
+        background-size: cover;
+        background: url("../img/food.png") center center no-repeat;
+        top: 100px;
+        left: -200px;
+    }
     .title {
         h2 {
             font-size: 40px;
@@ -290,5 +335,54 @@ footer {
         margin: 0px;
         padding: 0px;
         text-align: center;
+    }
+}
+
+@media(max-width: 991px) {
+    .menu {
+        overflow: hidden;
+        &:before,
+        &:after {
+            display: none;
+        }
+        .info {
+            .price {
+                position: relative;
+                top: initial;
+                right: initial;
+                display: inline-block;
+            }
+        }
+    }
+    .recommended {
+        a {
+            display: initial;
+            .food {
+                display: block;
+                max-width: 100%;
+            }
+            .info {
+                display: block;
+                .price {
+                    position: relative;
+                    top: initial;
+                    right: initial;
+                    display: inline-block;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .happy {
+        text-align: center;
+        img {
+            margin-top: 50px;
+        }
+        .justify-content-end {
+            justify-content: center !important;
+        }
+    }
+    .map-responsive {
+        height: 300px;
     }
 }

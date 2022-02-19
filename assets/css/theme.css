@@ -4,6 +4,21 @@ body {
   padding: 0 !important;
   font-family: "Montserrat", sans-serif; }
 
+nav .navbar-collapse {
+  justify-content: end; }
+nav a.nav-link {
+  font-weight: 600 !important; }
+nav ul.dropdown-menu.show {
+  border: none;
+  background: #978667;
+  border-radius: 0px; }
+  nav ul.dropdown-menu.show a {
+    color: #fff;
+    font-weight: 600 !important; }
+  nav ul.dropdown-menu.show .dropdown-item:hover {
+    background-color: #fff;
+    color: #978667; }
+
 .hero {
   padding: 200px 0 150px;
   background: url("../img/hero.png") center center no-repeat;
@@ -42,7 +57,26 @@ body {
       color: #978667; }
 
 .menu {
-  margin: 50px 0; }
+  margin: 50px 0;
+  position: relative; }
+  .menu:before {
+    position: absolute;
+    content: "";
+    width: 524px;
+    height: 167px;
+    background-size: cover;
+    background: url("../img/cake.png") center center no-repeat;
+    top: -50px;
+    right: 0px; }
+  .menu:after {
+    position: absolute;
+    content: "";
+    width: 343px;
+    height: 246px;
+    background-size: cover;
+    background: url("../img/food.png") center center no-repeat;
+    top: 100px;
+    left: -200px; }
   .menu .title h2 {
     font-size: 40px;
     line-height: 52px;
@@ -236,5 +270,40 @@ footer {
     margin: 0px;
     padding: 0px;
     text-align: center; }
+
+@media (max-width: 991px) {
+  .menu {
+    overflow: hidden; }
+    .menu:before, .menu:after {
+      display: none; }
+    .menu .info .price {
+      position: relative;
+      top: initial;
+      right: initial;
+      display: inline-block; }
+
+  .recommended a {
+    display: initial; }
+    .recommended a .food {
+      display: block;
+      max-width: 100%; }
+    .recommended a .info {
+      display: block; }
+      .recommended a .info .price {
+        position: relative;
+        top: initial;
+        right: initial;
+        display: inline-block;
+        margin-top: 20px; }
+
+  .happy {
+    text-align: center; }
+    .happy img {
+      margin-top: 50px; }
+    .happy .justify-content-end {
+      justify-content: center !important; }
+
+  .map-responsive {
+    height: 300px; } }
 
 /*# sourceMappingURL=theme.css.map */
