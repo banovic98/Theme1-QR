@@ -29,7 +29,7 @@ body {
       line-height: 64px;
       text-align: center;
       font-family: "Rochester", sans-serif !important;
-      color: #FFFFFF; }
+      color: #fff; }
   .hero .btns a {
     color: #fff;
     background: #978667;
@@ -37,6 +37,9 @@ body {
     display: table;
     margin: 50px auto 0;
     padding: 10px 30px; }
+    .hero .btns a:hover {
+      background-color: #fff;
+      color: #978667; }
 
 .menu {
   margin: 50px 0; }
@@ -45,7 +48,7 @@ body {
     line-height: 52px;
     font-family: "Rochester", sans-serif !important;
     text-align: center;
-    color: #000000;
+    color: #000;
     position: relative;
     display: table;
     margin: 0 auto; }
@@ -58,12 +61,159 @@ body {
       bottom: -10px;
       left: 50%;
       transform: translate(-50%, -50%); }
-  .menu button.nav-link {
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.15em;
-    color: #978667;
-    text-transform: uppercase; }
+  .menu .nav-tabs {
+    margin: 50px 0px;
+    border: none;
+    justify-content: center; }
+    .menu .nav-tabs .nav-link {
+      line-height: 22px;
+      text-align: center;
+      letter-spacing: 0.15em;
+      color: #000;
+      text-transform: uppercase;
+      border: none; }
+    .menu .nav-tabs .active {
+      color: #978667;
+      font-weight: 600; }
+  .menu .info {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px; }
+    .menu .info h3 {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: left;
+      letter-spacing: 0.15em;
+      color: #000000;
+      font-weight: 600; }
+    .menu .info p {
+      font-size: 14px;
+      line-height: 25px;
+      /* or 179% */
+      letter-spacing: 0.1em;
+      color: rgba(0, 0, 0, 0.5);
+      max-width: 400px; }
+    .menu .info .price {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      background-color: #978667;
+      font-weight: 500;
+      padding: 2px 25px;
+      color: #fff;
+      font-weight: 800; }
+    .menu .info:hover {
+      background-color: #978667; }
+      .menu .info:hover h3 {
+        color: #fff; }
+      .menu .info:hover p {
+        color: #fff; }
+      .menu .info:hover .price {
+        background: #fff;
+        color: #978667; }
+
+.happy {
+  background: url("../img/happy_bg.png") center center no-repeat;
+  background-size: cover;
+  padding: 50px 0px;
+  position: relative;
+  background-attachment: fixed; }
+  .happy:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px; }
+  .happy .content {
+    position: relative;
+    z-index: 9; }
+    .happy .content p {
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #fff; }
+    .happy .content h3 {
+      font-size: 40px;
+      line-height: 49px;
+      color: #FFFFFF; }
+      .happy .content h3 span {
+        color: #978667;
+        font-weight: 700; }
+    .happy .content p.description {
+      font-family: Rochester;
+      text-transform: inherit;
+      font-size: 20px; }
+
+.recommended {
+  margin: 50px 0px; }
+  .recommended .title {
+    margin-bottom: 100px; }
+    .recommended .title h3 {
+      font-size: 40px;
+      line-height: 52px;
+      font-family: "Rochester", sans-serif !important;
+      text-align: center;
+      color: #000;
+      position: relative;
+      display: table;
+      margin: 0 auto; }
+  .recommended a {
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px; }
+    .recommended a:hover {
+      background-color: #978667; }
+      .recommended a:hover .info h3,
+      .recommended a:hover .info p {
+        color: #fff; }
+      .recommended a:hover .info .price {
+        background-color: #fff;
+        color: #978667; }
+    .recommended a .food {
+      display: inline-block;
+      max-width: 200px; }
+      .recommended a .food img {
+        width: 100%; }
+    .recommended a .info {
+      display: inline-block;
+      position: relative;
+      margin-bottom: 0px;
+      padding: 20px; }
+      .recommended a .info h3 {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+        letter-spacing: 0.15em;
+        color: #000000;
+        font-weight: 600; }
+      .recommended a .info p {
+        font-size: 14px;
+        line-height: 25px;
+        margin: 0px;
+        letter-spacing: 0.1em;
+        color: rgba(0, 0, 0, 0.5);
+        max-width: 400px; }
+      .recommended a .info .price {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: #978667;
+        font-weight: 500;
+        padding: 2px 25px;
+        color: #fff;
+        font-weight: 800; }
+      .recommended a .info:hover {
+        background-color: #978667; }
+        .recommended a .info:hover h3 {
+          color: #fff; }
+        .recommended a .info:hover p {
+          color: #fff; }
+        .recommended a .info:hover .price {
+          background: #fff;
+          color: #978667; }
 
 .map-responsive {
   overflow: hidden;
@@ -77,5 +227,14 @@ body {
     width: 100%;
     position: absolute;
     font-family: "Rochester", sans-serif !important; }
+
+footer {
+  padding: 10px 0px;
+  background-color: #978667; }
+  footer p {
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    text-align: center; }
 
 /*# sourceMappingURL=theme.css.map */
